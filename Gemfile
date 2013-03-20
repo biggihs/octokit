@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'jruby-openssl', :platforms => :jruby
 gem 'rake'
 gem 'yard'
+gem 'sawyer', :git => "https://github.com/lostisland/sawyer.git"
 
 group :development do
   gem 'kramdown'

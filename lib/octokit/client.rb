@@ -1,5 +1,6 @@
 require 'octokit/authentication'
 require 'octokit/connection'
+require 'octokit/agent'
 require 'octokit/gist'
 require 'octokit/repository'
 require 'octokit/request'
@@ -44,6 +45,7 @@ module Octokit
     end
 
     include Octokit::Authentication
+    include Octokit::Agent
     include Octokit::Connection
     include Octokit::Request
 
