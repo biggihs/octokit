@@ -13,7 +13,7 @@ group :test do
   gem 'coveralls', :require => false
   gem 'json', '~> 1.7', :platforms => [:ruby_18, :jruby]
   gem 'rspec', '>= 2.11'
-  gem 'simplecov', :require => false
+  gem 'simplecov', '~> 0.7.1', :require => false
   gem 'webmock'
 end
 
