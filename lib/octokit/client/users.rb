@@ -179,6 +179,7 @@ module Octokit
       # @example
       #   @client.starred?('pengwynn', 'octokit')
       def starred?(user, repo, options={})
+        # TODO: Accept a Repo here
         boolean_from_response(:get, "user/starred/#{user}/#{repo}", options)
       end
 
