@@ -12,6 +12,7 @@ end
 
 group :test do
   gem 'coveralls', :require => false
+  gem 'guard-rspec'
   gem 'json', '~> 1.7', :platforms => [:ruby_18, :jruby]
   gem 'rspec', '>= 2.11'
   gem 'simplecov', '~> 0.7.1', :require => false
