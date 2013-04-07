@@ -6,8 +6,12 @@ gem 'yard'
 gem 'sawyer', :git => "https://github.com/lostisland/sawyer.git"
 
 group :development do
+  gem 'awesome_print', :require => 'ap'
+  gem 'wirble'
+  gem 'hirb-unicode'
   gem 'kramdown'
   gem 'pry'
+  gem 'wirb'
 end
 
 group :test do
@@ -18,5 +22,6 @@ group :test do
   gem 'simplecov', '~> 0.7.1', :require => false
   gem 'webmock'
 end
+
 
 gemspec

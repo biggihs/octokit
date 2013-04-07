@@ -9,7 +9,6 @@ module Octokit
         http.headers['Authorization'] = "token #{oauth_token}" if oauthed?
         http.basic_auth authentication[:login], authentication[:password] if authenticated? and !oauthed?
       end
-
       agent.links_parser = Sawyer::LinkParsers::Simple.new
 
       agent
